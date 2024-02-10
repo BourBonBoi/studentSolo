@@ -5,19 +5,130 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/reset.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
-	<title>To-do App</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <title>To-do App</title>
 </head>
 <body>
-	<div class="container">
-		<div class="counter-app">
-			<h2>counter <img src="img/logo.jpg" alt="img"></h2>
-			<div class="row">
-				<button onclick="minusNumber()">Delete</button>
-				<h1 id="number">0</h1>
-				<button onclick="addNumber()">Add</button>
+	<main class="main">
+		<section class="main-title">
+			<h1>StudenSolo</h1>
+		</section>
+		<section class="counter">
+				<div class="counter-app">
+					<h2>Counter <img src="img/logo.jpg" alt="img"></h2>
+					<div class="row">
+						<button onclick="minusNumber()">Delete</button>
+						<h1 id="number">0</h1>
+						<button onclick="addNumber()">Add</button>
+					</div>
+				</div>
+		</section>
+		<section class="to-do">
+			<div class="todo-app">
+				<h2>To-do List <img src="img/logo.jpg" alt="img"></h2>
+				<div class="row">
+					<input type="text" id="input-box" placeholder="New To-Do">
+					<button onclick="addTask()">Add</button>
+				</div>
+				<ul id="list-container">
+				<!-- 
+					<li class="checked">Task 1</li>
+					<li>Task 2</li>
+					<li>Task 3</li>
+				-->
+				</ul>
 			</div>
-		</div>
-	</div>
+		</section>
+		<section class="slider">
+		<!-- Slider main container -->
+			<div class="swiper mySwiper">
+			<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+				<!-- Slides -->
+					<div class="swiper-slide">
+						<div class="slide">
+							<div class="slide-container">
+								<div class="slide-title">
+									<h2>title 1</h2>
+								</div>
+								<div class="slide-subtitle">
+									<span>subtitle</span>
+								</div>
+							</div>
+							<div class="slide-content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam beatae tenetur, unde quia quis, sit eius voluptatum, optio natus consequatur dolores. Saepe exercitationem accusamus impedit maiores eos quidem a in.
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide">
+							<div class="slide-container">
+								<div class="slide-title">
+									<h2>title 2</h2>
+								</div>
+								<div class="slide-subtitle">
+									<span>subtitle</span>
+								</div>
+							</div>
+							<div class="slide-content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam beatae tenetur, unde quia quis, sit eius voluptatum, optio natus consequatur dolores. Saepe exercitationem accusamus impedit maiores eos quidem a in.
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide">
+							<div class="slide-container">
+								<div class="slide-title">
+									<h2>title 3</h2>
+								</div>
+								<div class="slide-subtitle">
+									<span>subtitle</span>
+								</div>
+							</div>
+							<div class="slide-content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam beatae tenetur, unde quia quis, sit eius voluptatum, optio natus consequatur dolores. Saepe exercitationem accusamus impedit maiores eos quidem a in.
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide">
+							<div class="slide-container">
+								<div class="slide-title">
+									<h2>title 4</h2>
+								</div>
+								<div class="slide-subtitle">
+									<span>subtitle</span>
+								</div>
+							</div>
+							<div class="slide-content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam beatae tenetur, unde quia quis, sit eius voluptatum, optio natus consequatur dolores. Saepe exercitationem accusamus impedit maiores eos quidem a in.
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide">
+							<div class="slide-container">
+								<div class="slide-title">
+									<h2>title 5</h2>
+								</div>
+								<div class="slide-subtitle">
+									<span>subtitle</span>
+								</div>
+							</div>
+							<div class="slide-content">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam beatae tenetur, unde quia quis, sit eius voluptatum, optio natus consequatur dolores. Saepe exercitationem accusamus impedit maiores eos quidem a in.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+				<!-- If we need navigation buttons -->
+
+			</div>	
+		</section>
+	</main>
 	<script src="js/main.js"></script>
 </body>
 </html>

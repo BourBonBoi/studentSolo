@@ -1,8 +1,16 @@
-.container{
-    width: 100%;
-    min-height: 100vh;
+main{
     background: linear-gradient(to top, #00ffaa, #c300ff);
-    padding: 10px;
+}
+.main-title {
+    background-color: transparent;
+    text-align: center;
+    color: #fff;
+}
+
+.main-title h1 {
+    font-size: 36px;
+    padding: 2%;
+
 }
 .counter-app{
     width: 100%;
@@ -29,6 +37,40 @@
     background: #d4fff8;
     border-radius: 30px;
     margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    background: #81e6ff;
+    padding: 16px 50px;
+    color:#fff;
+    font-size: 16px;
+    border-radius: 40px;
+}
+
+/*Todo*/
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+}
+.todo-app h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
 }
 input{
     flex: 1;
@@ -90,4 +132,50 @@ ul li span{
 }
 ul li span:hover{
     background: #292323;
+}
+/*swiper slider*/
+
+.slider {
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+}
+.swiper {
+    width: 540px;
+    height: 300px;
+}
+
+.swiper-slide {
+    background-color: #d4fff8;
+    border-radius: 20px;
+}
+.swiper-slide {
+    background-color: #d4fff8;
+    border-radius: 20px;
+}
+.slide {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.slide-title h2{
+    text-transform: uppercase;
+}
+.slide-container {
+    text-align: center; 
+    margin: 2% 0;
+    height: 100%;
+    width: 80%;
+}
+.slide-content{
+    height: 100%;
+    width: 80%;
+    margin-top: 5%;
+}
+
+.slide-title {
+    margin-bottom: 10px;
+}
+
+.slide-subtitle {
+    color: #636363; 
 }

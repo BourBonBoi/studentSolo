@@ -1,7 +1,24 @@
-/*todo*/ 
+
+const number = document.getElementById('number');
 const inputBox = document.getElementById('input-box');
 const listContainer = document.getElementById('list-container'); 
 
+/*number*/ 
+let changeNum = Number(number.textContent)
+
+function minusNumber() {
+    changeNum -=1;
+    number.textContent = changeNum;
+    saveData() 
+}
+
+function addNumber() {
+    changeNum +=1;
+    number.textContent = changeNum;
+    saveData() 
+}
+
+/*todo*/ 
 function addTask() {
     if (inputBox.value === '') {
         alert('Please add new task');
@@ -38,4 +55,19 @@ function showList() {
     listContainer.innerHTML = localStorage.getItem('data');
 }
 
+/*Swiper*/
+
+let swiper = new Swiper('.mySwiper', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+});
+
+
+
+
+
+
 showList();
+

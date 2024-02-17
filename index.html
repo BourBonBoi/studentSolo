@@ -15,7 +15,7 @@
 			<h1>StudenSolo</h1>
 		</section>
 		<section class="counter">
-				<div class="counter-app">
+				<div class="counter-app app">
 					<h2>Counter <img src="img/logo.jpg" alt="img"></h2>
 					<div class="row">
 						<button onclick="minusNumber()">Delete</button>
@@ -25,7 +25,7 @@
 				</div>
 		</section>
 		<section class="to-do">
-			<div class="todo-app">
+			<div class="todo-app app">
 				<h2>To-do List <img src="img/logo.jpg" alt="img"></h2>
 				<div class="row">
 					<input type="text" id="input-box" placeholder="New To-Do">
@@ -127,6 +127,23 @@
 				<!-- If we need navigation buttons -->
 
 			</div>	
+		</section>
+		<section class="weather">
+			<div class="weather-app app">
+				<h2>weather</h2>
+					<div class="weather-content">
+						<form  class="form" action="" id="weather-form">
+							<input class="form__input" type="text" name="" id="weather-input" placeholder="Enter city name">
+							<button class="form__btn">find</button>
+						</form>
+						<div class="weather__temp" id="weatherTemp"></div>
+						<div class="weather__city" id="weatherCity"></div>
+						<div class="weather__disc" id="weatherDisc"></div>
+					</div>
+			</div>
+		</section>
+		<section class="">
+			
 		</section>
 	</main>
 	<script src="js/main.js"></script>

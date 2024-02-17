@@ -1,6 +1,14 @@
 main{
     background: linear-gradient(to top, #00ffaa, #c300ff);
 }
+.app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+}
 .main-title {
     background-color: transparent;
     text-align: center;
@@ -12,14 +20,7 @@ main{
     padding: 2%;
 
 }
-.counter-app{
-    width: 100%;
-    max-width: 540px;
-    background: #fff;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
-    border-radius: 20px;
-}
+
 .counter-app h2{
     display: flex;
     align-items: center;
@@ -51,17 +52,15 @@ button{
     color:#fff;
     font-size: 16px;
     border-radius: 40px;
+    transition: 500ms;
+}
+
+button:hover{
+    background: #c300ff;
 }
 
 /*Todo*/
-.todo-app{
-    width: 100%;
-    max-width: 540px;
-    background: #fff;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
-    border-radius: 20px;
-}
+
 .todo-app h2{
     display: flex;
     align-items: center;
@@ -78,14 +77,6 @@ input{
     padding: 10px;
     font-weight: 14px;
 }
-button{
-    background: #81e6ff;
-    padding: 16px 50px;
-    color:#fff;
-    font-size: 16px;
-    border-radius: 40px;
-}
-
 ul li{
     position: relative;
     font-size: 18px;
@@ -179,3 +170,33 @@ ul li span:hover{
 .slide-subtitle {
     color: #636363; 
 }
+/*weather*/
+
+.weather-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.weather-app h2{
+    margin-bottom: 5%;
+}
+.form {
+    display: flex;
+    background: #d4fff8;
+    border-radius: 40px;
+    width:100%;
+}
+.form__input {
+    background: #d4fff8;
+    border-radius: 40px;
+
+}
+
+.weather__temp {
+    font-weight: bold;
+    font-size: 36px;
+    padding: 5% 0 2% 0;
+}
+
+
